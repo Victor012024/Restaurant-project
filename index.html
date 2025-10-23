@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanko Foods</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:wght@100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="landing-page">
+        <header class="header">
+          <div class="logo">
+            <h1>Kanko Foods</h1>
+          </div>
+
+          <nav class="navBar">
+            <div class="mobile-hamburger">
+              <div class="ham"></div>
+              <div class="ham"></div>
+              <div class="ham"></div>
+            </div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#menu">About</a></li>
+              <li><a href="./main.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="body-text">
+          <h1 class="reveal-text">WELCOME TO KANKO FOODS</h1>
+          <p class="tagLine">Indulge in Flavors, inspired by Passion</p>
+
+          <div class="buttons">
+            <div
+              class="button"
+              role="button"
+              id="reserve"
+              onclick="window.location.href = '#reservation'"
+            >
+              Reserve a Table
+            </div>
+            <div
+              class="button"
+              role="button"
+              onclick="window.location.href='#menu-header'"
+            >
+              Place Order
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <section class="menu" id="menu" data-aos="fade-right">
+      <div class="About">
+        <h1>About Us</h1>
+        <div class="boxes">
+          <div class="box">
+            <h2>FAST DELIVERY</h2>
+            <p>
+              Experience fast delivery when you order with us. Our dispatch
+              delivers in less than 20 mins and for every 3 orders you place,
+              you get a free drink to go with it.
+            </p>
+          </div>
+
+          <div class="box">
+            <h2>CUSTOMER SERVICE</h2>
+            <p>
+              If any issue or problem occurs, you can kindly reach out to us via
+              our inbuilt customer service, email, or WhatsApp.
+            </p>
+          </div>
+
+          <div class="box">
+            <h2>ANYWHERE IN ABEOKUTA</h2>
+            <p>
+              Our swift delivery covers all corners of Abeokuta — ranging from 1
+              to 2 hours distance from the restaurant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="menu-header" id="menu-header">
+      <h1>Our African Menu</h1>
+      <p>Taste the authentic flavors of Africa 🍲</p>
+    </header>
+
+    <section class="menu-section">
+      <div class="menu-item" data-name="jollof">
+        <img
+          src="./IMAGES/jollof-rice.jpg"
+          alt="Jollof Rice"
+          width="200"
+          height="200"
+          data-img="images/jollofrice.jpg"
+        />
+        <h2>Jollof Rice</h2>
+        <p>
+          Spicy and flavorful rice cooked in tomato stew, served with fried
+          plantain and chicken.
+        </p>
+        <span class="price" data-price="400">₦400</span>
+        <button class="add-btn">Add to Order</button>
+      </div>
+
+      <div class="menu-item" data-name="friedrice">
+        <img
+          src="./IMAGES/fried-rice.jpg"
+          alt="Fried Rice"
+          width="200"
+          height="200"
+          data-img="images/friedrice.jpg"
+        />
+        <h2>Fried Rice</h2>
+        <p>
+          Golden rice stir-fried with vegetables, liver, and shrimp for that
+          perfect Nigerian taste.
+        </p>
+        <span class="price" data-price="400">₦400</span>
+        <button class="add-btn">Add to Order</button>
+      </div>
+
+      <div class="menu-item" data-name="whiterice">
+        <img
+          src="./IMAGES/white-rice.jpg"
+          alt="White Rice and Stew"
+          width="200"
+          height="200"
+          data-img="images/whiterice.jpg"
+        />
+        <h2>White Rice & Stew</h2>
+        <p>Steamed white rice served with rich pepper stew and fried beef.</p>
+        <span class="price" data-price="400">₦400</span>
+        <button class="add-btn">Add to Order</button>
+      </div>
+
+      <div class="menu-item" data-name="beans">
+        <img
+          src="./IMAGES/beans.jpg"
+          alt="Beans and Bread"
+          width="200"
+          height="200"
+          data-img="images/beans.jpg"
+        />
+        <h2>Beans & Bread</h2>
+        <p>
+          Mashed beans (ewa agoyin style) with soft agege bread and spicy palm
+          oil sauce.
+        </p>
+        <span class="price" data-price="600">₦600 - #1000</span>
+        <button class="add-btn">Add to Order</button>
+      </div>
+
+      <div class="menu-item" data-name="yam">
+        <img src="./IMAGES/yam.jpg" alt="Yam Porridge" width="200" height="200" data-img="images/yam.jpg" />
+        <h2>Yam Porridge (Asaro)</h2>
+        <p>
+          Yam cooked with palm oil, pepper, fish, and a blend of traditional
+          Yoruba spices.
+        </p>
+        <span class="price" data-price="500">₦500</span>
+        <button class="add-btn">Add to Order</button>
+      </div>
+
+      <div class="menu-item" data-name="amala_and_ewedu">
+        <img
+          src="./IMAGES/amala.jpg"
+          alt="Amala and Ewedu"
+          width="200"
+          height="200"
+          data-img="images/amala.jpg"
+        />
+        <h2>Amala & Ewedu</h2>
+        <p>
+          Yam flour meal served with ewedu soup, gbegiri, and assorted meat — a
+          Yoruba favorite!
+        </p>
+        <span class="price" data-price="1500">₦1,500</span>
+        <button class="add-btn">Add to Order</button>
+      </div>
+    </section>
+
+    <section class="order-section">
+      <h2>Your Order</h2>
+      <ul id="order-list"></ul>
+      <p id="total">Total: ₦0</p>
+      <button id="place-order">Place Order</button>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <form class="reservation-form">
+        <h1>Make a Reservation</h1>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name..." required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email..."required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            maxlength="11"
+            placeholder="Phone No..."
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date of Reservation</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" required/>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <input type="number" id="guests" name="guests" required/>
+        </div>
+
+        <div class="form-group">
+          <label for="occasion">Special Occasion</label>
+          <select id="occasion" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-group occasion-details hidden" id="occasion-details">
+          <textarea placeholder="Describe the occasion..." rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="add-ons" id="add">Additional Message</label>
+          <textarea
+            id="add-ons"
+            rows="5"
+            placeholder="Anything else?"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit Reservation</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col brand">
+          <h2>Kanko Foods</h2>
+          <p>
+            Where every bite feels like home. Experience delicious meals,
+            crafted with love and served with warmth.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul class="link-href">
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Mercy Rd, Panseke, Abeokuta
+            </li>
+            <li><i class="fas fa-phone"></i> +234 806 555 2341</li>
+            <li><i class="fas fa-envelope"></i> hello@kankofoods.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Opening Hours</h3>
+          <ul>
+            <li>Mon – Fri: 10:00 AM – 10:00 PM</li>
+            <li>Saturday: 11:00 AM – 11:00 PM</li>
+            <li>Sunday: 12:00 PM – 9:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kanko Foods. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
